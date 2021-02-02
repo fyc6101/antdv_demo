@@ -4,7 +4,7 @@
       <div class="title">Login Demo</div>
       <div class="login">
         <div class="login-icon">
-          <img alt="Vue logo" src=".././assets/logo.png" />
+          <img class="vue-logo" alt="Vue logo" src=".././assets/logo.png" />
         </div>
         <div class="login-item">
           <a-form
@@ -102,7 +102,7 @@ export default {};
   justify-content: center;
 
   .login-ct {
-    text-align: center;
+    // text-align: center;
     background-color: #ffffff;
     height: 350px;
     width: 800px;
@@ -113,13 +113,33 @@ export default {};
     justify-content: center;
 
     .title {
-      font-size: 30px;
-      height: 66px;
+      font-size: 36px;
+      height: 50px;
+      margin-bottom: 8px;
     }
 
     .login {
       display: flex;
+      align-items: flex-end;
+
+      .login-icon {
+        padding: 0 26px 44px 0;
+        .vue-logo{
+          height: 240px;
+        }
+      }
+
+      .login-item {
+        width: 300px;
+      }
     }
   }
+}
+
+#components-form-demo-normal-login .login-form-forgot {
+  float: right;
+}
+#components-form-demo-normal-login .login-form-button {
+  width: 100%;
 }
 </style>
